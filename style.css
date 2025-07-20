@@ -1,0 +1,211 @@
+section {
+  scroll-margin-top: 100px; /* adjust based on header height */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  background: #121212;
+  color: white;
+}
+
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #f5c518;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f5c518;
+}
+
+.intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 180px;
+  border-radius: 70%;
+  border: 3px solid #f5c518;
+  object-fit: cover;            /* Crops the image neatly inside */
+  object-position: center;      /* Keeps it centered */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);  /* zoomed out to 80% size */
+  transform-origin: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.profile-pic:hover {
+  transform: scale(1.0);
+  box-shadow: 0 0 20px #f5c51888;
+}
+
+
+h2 {
+  color: #f5c518;
+}
+
+.project-card {
+  background: #1e1e1e;
+  margin: 1rem;
+  padding: 1rem;
+  border-left: 4px solid #f5c518;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  text-align: center;
+  background: #000;
+  padding: 2rem;
+  color: #f5c518;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.project-card {
+  background: #1e1e1e;
+  border-left: 5px solid #f5c518;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #f5c51866;
+}
+.project-details {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #181818;
+  border-radius: 10px;
+}
+
+.project-details h1 {
+  color: #f5c518;
+  margin-bottom: 1rem;
+}
+
+.project-details ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+/* Project Details Page Styles */
+.project-details {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(245, 197, 24, 0.2);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.project-details h1 {
+  color: #f5c518;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-details h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+.project-details p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.project-details strong {
+  color: #f5c518;
+}
+
+.project-details ul {
+  padding-left: 1.5rem;
+  list-style-type: square;
+  margin-bottom: 1.5rem;
+}
+
+.project-details a {
+  color: #cfc090;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.project-details a:hover {
+  color: #ffdd57;
+}
+
+/* Header back link styling */
+header {
+  padding: 1rem 2rem;
+  background-color: #000;
+}
+
+header a {
+  color: #f5c518;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #fff;
+}
